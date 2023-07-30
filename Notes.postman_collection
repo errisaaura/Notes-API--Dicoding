@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "2d2bbcdf-54c2-4577-9b54-b22dfa0b213d",
+		"name": "Notes Manual",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19082943"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetbyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/notes/TtdgmDIS9LMFz0Z4",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes",
+						"TtdgmDIS9LMFz0Z4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Catatan A\",\r\n    \"tags\" : [\"Android\", \"Web\"],\r\n    \"body\" : \"Isi dari catatan A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditByid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Catatan A Revisi\",\r\n    \"tags\" : [\"Android\", \"Web\"],\r\n    \"Body\" : \"Isi dari catatan A Revisi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/notes/TtdgmDIS9LMFz0Z4",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes",
+						"TtdgmDIS9LMFz0Z4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dell",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/notes/9yGrlCSq99ltLONk",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notes",
+						"9yGrlCSq99ltLONk"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
